@@ -11,14 +11,14 @@ import name.caiyao.microreader.R;
  */
 public class SharePreferenceUtil {
 
-    private SharePreferenceUtil() {}
-
     public static final String SHARED_PREFERENCE_NAME = "micro_reader";
     public static final String IMAGE_DESCRIPTION = "image_description";
     public static final String VIBRANT = "vibrant";
     public static final String MUTED = "muted";
     public static final String IMAGE_GET_TIME = "image_get_time";
     public static final String SAVED_CHANNEL = "saved_channel";
+
+    private SharePreferenceUtil() {}
 
     public static boolean isRefreshOnlyWifi(Context context) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
